@@ -27,11 +27,6 @@
         cout <<"La media e':  " ;
         cout <<media (somma,i,m);
 
-
-
-
-
-
         return 0;}
 
     int assunzione_somma (int guadagno, int& somma, string reparto) {
