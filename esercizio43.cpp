@@ -31,14 +31,6 @@
         cout <<"percentuali sui voti totali: ";
         cout <<percentuale (voti1,voti2,voti_tot,perc1,perc2) <<endl;
 
-        if (perc1>=perc2){
-
-            cout <<"1. " <<nome1 <<endl;
-            cout <<"2. " <<nome2;}
-
-        else {cout <<"1. " <<nome2 <<endl;
-              cout <<"2. " <<nome1;}
-
     return 0;}
 
 
@@ -49,7 +41,19 @@
         perc1=(voti1*100)/voti_tot;
         perc2=(voti2*100)/voti_tot;
 
-        cout <<perc1 <<"%" <<"    " <<perc2 <<"%";
+        cout <<perc1 <<"%" <<"    " <<perc2 <<"%" <<endl;
+        
+            
+        if (perc1>perc2)
+           {cout <<"1. " <<nome1 <<endl;
+            cout <<"2. " <<nome2;}
+        
+        if (perc1<perc2) 
+             {cout <<"1. " <<nome2 <<endl;
+              cout <<"2. " <<nome1;}
+
+        if (perc1==perc2)
+        {cout <<"hanno pareggiato";}
         }
 
 
