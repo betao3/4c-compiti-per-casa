@@ -17,6 +17,7 @@
    int fine;
    int perc;
    string prodotto;
+   string descrizione;
 
    float incremento (int perc, int prezzo, float incr);
 
@@ -28,6 +29,8 @@
 
             cout <<"il prodotto:  ";
             cin >>prodotto;
+            cout <<":  ";
+            cin>>descrizione;
             cout <<"che costava:  ";
             cin >>prezzo;
             cout <<endl;
