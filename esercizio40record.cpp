@@ -26,13 +26,13 @@ int main(){
     cin>> R.q;
     cout<<"inserisci il coeff. angolare:";
     cin>> R.m;
-    if(inter(xp, yp, q, m))
+    if(inter(P.x, P.y, R.q, R.m))
         cout<<"Il punto appartiene alla retta"<<'\n';
     else
         cout<<"Il punto non appartiene alla retta"<<'\n';
     return 0;
 }
 
-bool inter(float xp, float yp, float q, float m){
+bool inter(float P.x, float P.y, float R.q, float R.m){
     return (yp == (m*xp)+q);
 }
