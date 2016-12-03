@@ -1,11 +1,11 @@
-/* Bettiolo Federico 
+/* Bettiolo Federico
    4^c  3/12/16    */
 #include<iostream>
 using namespace std;
 
 struct punto{
-    float xp;
-    float yp;
+    float x;
+    float y;
 };
 
 struct retta{
@@ -19,13 +19,13 @@ int main(){
     retta R;
     punto P;
     cout<<"Inserisci l'ascissa del punto:";
-    cin>>xp;
+    cin>> P.x;
     cout<<"Inserisci l'ordinata del punto:";
-    cin>>yp;
+    cin>> P.y;
     cout<<"Inserisci il punto di intersezione con l'asse y:";
-    cin>>q;
+    cin>> R.q;
     cout<<"inserisci il coeff. angolare:";
-    cin>>m;
+    cin>> R.m;
     if(inter(xp, yp, q, m))
         cout<<"Il punto appartiene alla retta"<<'\n';
     else
